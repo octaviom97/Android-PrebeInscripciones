@@ -4,24 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center"
-    android:paddingBottom="10dp"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    tools:context=".Registro">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Registro del usuario"
+        android:textColor="@color/colorPrimary"
         android:textAlignment="center"
-        android:text="!Bienvenido a Prebe Inscripciones!"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
-        android:layout_height="1dp" />
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/etNombre"
@@ -36,7 +31,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Facultad"
+        android:hint="Carrera"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etSemestre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Semestre"
         android:inputType="textPersonName" />
 
     <EditText
@@ -48,19 +51,9 @@
         android:inputType="textPassword" />
 
     <Button
+        android:id="@+id/bRegistrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="Login"
-        android:text="Iniciar sesión" />
-
-
-
-    <TextView
-        android:id="@+id/tvRegistroLink"
-        android:layout_width="match_parent"
-        android:paddingTop="10dp"
-        android:layout_height="wrap_content"
-        android:text="Registrarse Aqui"
-        android:textAlignment="center" />
+        android:text="Registrarse" />
 </LinearLayout>
